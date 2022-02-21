@@ -1,0 +1,16 @@
+﻿@using RentGermanCar.Data
+@model Car
+
+<form asp-controller="Home" asp-action="SaveCar">
+    <label asp-for="Brand"></label>
+    <input class="form-control" asp-for="Brand" />
+
+    <label asp-for="Color"></label>
+    <input class="form-control" asp-for="Color" />
+
+    <label asp-for="BringDate"></label>
+    <input class="form-control" asp-for="BringDate" />
+
+    <button class="btn btn-primary">RENT</button>
+</form>
+

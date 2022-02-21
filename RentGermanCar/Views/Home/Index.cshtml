@@ -1,0 +1,32 @@
+﻿@model List<Car>
+
+@if (Model == null || Model.Count == 0)
+{
+    <h2>No Rent Car Result in This Moment.</h2>
+}
+else
+{
+    @foreach (var car in Model)
+    {
+        <div class="car-card">
+            <div onclick="getCar('@car.Id')" class="row">
+                <div class="col-3">
+                    <b>Brand: @car.Brand</b>
+                </div>
+                <div class="col-3">
+                    <b>Color: @car.Color</b>
+                </div>
+                <div class="col-3">
+                    <b>DateBrought: @car.BringDate</b>
+                </div>
+            </div>
+        </div>
+        <hr />
+    }
+}
+
+<script>
+    const getCar = (id) => {
+        window.location = `/Home/GetCar/${id}`
+    }
+</script>
