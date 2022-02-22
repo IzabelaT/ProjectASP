@@ -57,10 +57,19 @@ html {
   position: relative;
   min-height: 100%;
 }
+h1
+{
+    color: grey;
+}
+
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Image/background.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer {
   position: absolute;

@@ -37,7 +37,7 @@ namespace RentGermanCar.Controllers
             return View();
         }
 
-        public IActionResult Contacts()
+        public IActionResult Contact()
         {
             return View();
         }
