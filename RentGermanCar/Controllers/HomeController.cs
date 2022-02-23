@@ -32,7 +32,7 @@ namespace RentGermanCar.Controllers
             return View();
         }
 
-        public IActionResult AboutUs()
+        public IActionResult Cities()
         {
             return View();
         }
